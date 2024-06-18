@@ -46,7 +46,7 @@ public class FerramentaResource {
 	@DeleteMapping(value = "/{id}")
 	public ResponseEntity<Ferramenta> delete(@PathVariable Long id){
 		ferramentaService.delete(id);
-		return ResponseEntity.noContent().build();
+		return ResponseEntity.ok().body(null);
 	}
 	
 	
