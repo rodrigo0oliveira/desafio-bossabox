@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
+import jakarta.persistence.Column;
+import jakarta.persistence.ElementCollection;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -20,6 +22,9 @@ public class Ferramenta {
 	private String title;
 	private String link;
 	private String description;
+	
+	@ElementCollection
+	@Column(name = "tags")
 	private List<String> tags = new ArrayList<>();
 	
 	public Ferramenta(Long id, String title, String link, String description, List<String> tags) {
