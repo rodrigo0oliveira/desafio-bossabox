@@ -18,7 +18,7 @@ import com.desafio.bossabox.entities.Ferramenta;
 import com.desafio.bossabox.services.FerramentaService;
 
 @RestController
-@RequestMapping(name = "ferramentas")
+@RequestMapping(value = "/ferramentas")
 public class FerramentaResource {
 	
 	@Autowired
@@ -43,7 +43,7 @@ public class FerramentaResource {
 		return ResponseEntity.created(uri).body(ferramenta);
 	}
 	
-	@DeleteMapping
+	@DeleteMapping(value = "/{id}")
 	public ResponseEntity<Ferramenta> delete(@PathVariable Long id){
 		ferramentaService.delete(id);
 		return ResponseEntity.noContent().build();

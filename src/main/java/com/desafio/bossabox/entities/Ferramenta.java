@@ -30,6 +30,9 @@ public class Ferramenta implements Serializable{
 	@Column(name = "tags")
 	private List<String> tags = new ArrayList<>();
 	
+	public Ferramenta() {
+	}
+	
 	public Ferramenta(Long id, String title, String link, String description, List<String> tags) {
 		super();
 		this.id = id;
