@@ -9,7 +9,7 @@ https://bossabox.notion.site/Back-end-0b2c45f1a00e4a849eefe3b1d57f23c6
 * Java 17
 * Spring Web
 * Spring Data JPA
-* Banco de dados H2
+* Banco de dados MariDB
 * Insomnia para realizar requisições HTTP.
 * Swagger para documentação da API.
 
