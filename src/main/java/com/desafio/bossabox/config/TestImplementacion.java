@@ -1,14 +1,9 @@
 package com.desafio.bossabox.config;
 
-import java.util.Arrays;
-import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
 
-import com.desafio.bossabox.entities.Ferramenta;
 import com.desafio.bossabox.repositoriries.FerramentaRepository;
 
 @Configuration
